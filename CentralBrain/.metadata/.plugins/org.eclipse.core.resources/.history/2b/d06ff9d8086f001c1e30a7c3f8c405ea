@@ -1,0 +1,5 @@
+package fr.insa.mas.OperationModel.model;
+
+public class OperationModel {
+
+}

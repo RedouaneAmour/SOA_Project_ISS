@@ -1,0 +1,5 @@
+package fr.insa.mas.CentralBrainMS.controller;
+
+public class CentralBrain {
+
+}
