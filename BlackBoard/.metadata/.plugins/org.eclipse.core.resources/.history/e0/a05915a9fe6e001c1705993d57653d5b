@@ -1,0 +1,5 @@
+package fr.insa.mas.TeacherInformationMS.model;
+
+public class TeacherModel {
+
+}

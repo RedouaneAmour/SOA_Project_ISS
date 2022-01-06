@@ -1,0 +1,5 @@
+package fr.insa.mas.TeacherInformationMS.controller;
+
+public class TeacherInformation {
+
+}
