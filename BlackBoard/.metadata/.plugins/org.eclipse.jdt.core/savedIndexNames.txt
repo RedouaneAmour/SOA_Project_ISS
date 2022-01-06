@@ -2,5 +2,4 @@ INDEX VERSION 1.131+C:\Users\redou\Desktop\Dossier_Redouane\Architecture_de_Serv
 1865797976.index
 1554797967.index
 1450694893.index
-311742368.index
 1285814949.index
