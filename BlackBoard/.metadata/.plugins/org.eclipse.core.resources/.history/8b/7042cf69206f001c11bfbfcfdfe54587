@@ -1,0 +1,21 @@
+package fr.insa.mas.TeacherInformationMS;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import fr.insa.mas.TeacherInformationMS.controller.TeacherInformation;
+
+@SpringBootTest
+class TeacherInformationMsApplicationTests {
+
+	@Mock
+	private Model model;
+	
+	@Test
+	void contextLoads() {
+		TeacherInformation controller = new TeacherInformation();
+		
+	}
+
+}

@@ -1,0 +1,33 @@
+package fr.insa.mas.TeacherInformationMS;
+
+import static org.junit.Assert.assertTrue;
+
+import org.junit.jupiter.api.Test;
+import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import fr.insa.mas.TeacherInformationMS.controller.TeacherInformation;
+import fr.insa.mas.TeacherInformationMS.model.TeacherModel;
+
+@SpringBootTest
+class TeacherInformationMsApplicationTests {
+
+	@Mock
+	private Mock model;
+	
+	@Test
+	void contextLoads() {
+		
+		TeacherInformation controller = new TeacherInformation();
+		assertTrue(testTeachers(new TeacherModel(-1, 0, ""), controller.getTeacherInformation(-1)));
+		
+	}
+	private boolean testTeachers(TeacherModel  A, TeacherModel B) {
+		if((A.getName() == B.getName()) && (A.getId() == B.getId()) && (A.getSize() == B.getSize())){
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+}

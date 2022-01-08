@@ -2,6 +2,7 @@
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
@@ -15,12 +16,11 @@ import fr.insa.mas.TeacherModel.model.TeacherModel;
 @RequestMapping("/BlackboardManagement")
 public class BlackboardManagement {
 	
-	@GetMapping("/{teacherID}")
+	@PostMapping("/{teacherID}")
 	public OperationModel manageBlackboard(@PathVariable int teacherID){
 		RestTemplate restTemplate = new RestTemplate();
 		String readBlackboardPositionURL = "http://localhost:8181/ReadPosition/";
-		String teacherInformationURL = "http://localhost:8182/TeacherInformation/"+teacherID;
-		
+		String teacherInformationURL = "http://localhost:8182/TeacherInformation/"+teacherID;		
 		
 		int currentBlackboardPosition = restTemplate.getForObject(readBlackboardPositionURL, Integer.class);	
 		
