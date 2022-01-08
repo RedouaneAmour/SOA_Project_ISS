@@ -180,3 +180,4 @@
 2022-01-08 11:52:46,736 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2022-01-08 11:52:46,740 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-01-08 11:52:46,740 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-01-08 11:52:46,741 [Worker-21: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\redou\Desktop\Dossier_Redouane\Architecture_de_Services\SOA_Project_ISS\CentralBrain\CentralBrainMS\src\test\resources
